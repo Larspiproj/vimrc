@@ -10,7 +10,7 @@ autocmd FileType c setlocal ts=4 sw=4 sts=4 expandtab smartindent
 autocmd FileType python setlocal ts=4 sw=4 sts=4 expandtab smartindent
 
 " Html
-autocmd FileType html setlocal ts=2 sw=2 sts=4 expandtab smartindent
+autocmd FileType html setlocal ts=2 sw=2 sts=2 expandtab smartindent
 
 " Css
 autocmd FileType css setlocal ts=4 sw=4 sts=4 expandtab smartindent
