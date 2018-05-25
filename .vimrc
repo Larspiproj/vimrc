@@ -15,6 +15,9 @@ autocmd FileType html setlocal ts=2 sw=2 sts=2 expandtab smartindent
 " Css
 autocmd FileType css setlocal ts=4 sw=4 sts=4 expandtab smartindent
 
+" js
+autocmd FileType javascript setlocal ts=4 sw=4 sts=4 expandtab smartindent
+
 " wsgi
 "/usr/share/vim/vim80/filetype.vim
 "Python
