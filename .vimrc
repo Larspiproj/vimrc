@@ -2,6 +2,8 @@ set background=dark
 syntax on
 set colorcolumn=80
 highlight ColorColumn ctermbg=darkgray
+set hlsearch
+map <esc> :noh <cr>
 
 " C
 autocmd FileType c setlocal ts=4 sw=4 sts=4 expandtab smartindent
