@@ -2,8 +2,15 @@ set background=dark
 syntax on
 set colorcolumn=80
 highlight ColorColumn ctermbg=darkgray
-set hlsearch
-map <esc> :noh <cr>
+let g:netrw_winsize = 20
+let g:netrw_browse_split = 4
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Vexplore
+augroup END
+
+"set hlsearch
+"map <esc> :noh <cr>
 
 " C
 autocmd FileType c setlocal ts=4 sw=4 sts=4 expandtab smartindent
