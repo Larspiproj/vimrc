@@ -2,12 +2,13 @@ set background=dark
 syntax on
 set colorcolumn=80
 highlight ColorColumn ctermbg=darkgray
-let g:netrw_winsize = 20
-let g:netrw_browse_split = 4
-augroup ProjectDrawer
-  autocmd!
-  autocmd VimEnter * :Vexplore
-augroup END
+map <TAB> <C-W><C-W>
+"let g:netrw_winsize = 20
+"let g:netrw_browse_split = 4
+"augroup ProjectDrawer
+"  autocmd!
+"  autocmd VimEnter * :Vexplore
+"augroup END
 
 "set hlsearch
 "map <esc> :noh <cr>
