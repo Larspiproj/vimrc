@@ -25,7 +25,7 @@ autocmd FileType javascript setlocal ts=2 sw=2 sts=2 expandtab smartindent
 " arduino
 au BufRead,BufNewFile *.ino set filetype=c
 
-ab #!/bin/bash #!/bin/bash
+ab _sh #!/bin/bash
 ab _main int main(int argc, char** argv) {<CR><CR><C-d>}
 ab _ino void setup() {<CR><CR><C-d>}<CR><CR>void loop() {<CR><CR><C-d>}
 
