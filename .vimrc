@@ -42,9 +42,11 @@ autocmd FileType python setlocal ts=4 sw=4 sts=4 expandtab smartindent
 "autocmd FileType javascript setlocal ts=2 sw=2 sts=2 expandtab smartindent
 
 " arduino
-au BufRead,BufNewFile *.ino set filetype=c
+"au BufRead,BufNewFile *.ino set filetype=c
+au BufRead,BufNewFile *.ino set filetype=arduino ts=2 sw=2 sts=2 expandtab smartindent
 
 " s (assembler)
+"au BufRead,BufNewFile *.s set ft=asm_ca65.vim ts=4 sw=4 sts=4 expandtab smartindent
 au BufRead,BufNewFile *.s set ft=asmM6502 ts=4 sw=4 sts=4 expandtab smartindent
 "au BufRead,BufNewFile *.s set ft=acme
 "au BufRead,BufNewFile *.s set filetype=python
