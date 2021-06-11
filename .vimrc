@@ -21,36 +21,42 @@ highlight ColorColumn ctermbg=darkgray
 map <TAB> <C-W><C-W>
 nmap <C-n> :set invnu<CR>
 
-set ai "et sw=4 ts=4
+set ai sw=4 ts=4 sts=4 expandtab
 
-"filetype plugin indent on
+filetype plugin indent on
 "set autoindent
 
 " C
-autocmd FileType c setlocal ts=2 sw=2 sts=2 expandtab smartindent
+autocmd FileType c setlocal ts=2 sw=2 sts=2 expandtab "smartindent
+"autocmd FileType h setlocal ts=2 sw=2 sts=2 expandtab "smartindent
 
 " Python
-autocmd FileType python setlocal ts=4 sw=4 sts=4 expandtab smartindent
+autocmd FileType python setlocal ts=4 sw=4 sts=4 expandtab "smartindent
 
 " Html
-"autocmd FileType html setlocal ts=2 sw=2 sts=2 expandtab smartindent
+"autocmd FileType html setlocal ts=2 sw=2 sts=2 expandtab "smartindent
 
 " Css
-"autocmd FileType css setlocal ts=4 sw=4 sts=4 expandtab smartindent
+"autocmd FileType css setlocal ts=4 sw=4 sts=4 expandtab "smartindent
 
 " js
-"autocmd FileType javascript setlocal ts=2 sw=2 sts=2 expandtab smartindent
+"autocmd FileType javascript setlocal ts=2 sw=2 sts=2 expandtab "smartindent
 
 " arduino
 au BufRead,BufNewFile *.ino set filetype=c
 
-" s (assembler)
-au BufRead,BufNewFile *.s set ft=asmM6502 ts=4 sw=4 sts=4 expandtab smartindent
+" assembler *.s *.asm
+"autocmd FileType s setlocal ft=asm6502 ts=4 sw=4 sts=4 expandtab "smartindent
 "au BufRead,BufNewFile *.s set ft=acme
 "au BufRead,BufNewFile *.s set filetype=python
+au BufRead,BufNewFile *.s set ft=asmM6502 ts=8 sw=8 sts=8 expandtab "smartindent
+au BufRead,BufNewFile *.asm set ft=asmM6502 ts=8 sw=8 sts=8 expandtab "smartindent
+au BufRead,BufNewFile *.inc set ft=asmM6502 ts=8 sw=8 sts=8 expandtab "smartindent
+au BufRead,BufNewFile *.h set filetype=c
+au BufRead,BufNewFile Makefile set filetype=make
 
 ab _sh #!/bin/bash
-ab _main int main(int argc, char** argv) {<CR><CR><C-d>}
+ab _main #include <stdio.h><CR><CR><C-d>int main(int argc, char** argv) {<CR><CR><C-d>}
 ab _ino void setup() {<CR><CR><C-d>}<CR><CR>void loop() {<CR><CR><C-d>}
 
 "let g:netrw_winsize = 20
