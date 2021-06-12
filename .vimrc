@@ -46,9 +46,6 @@ autocmd FileType python setlocal ts=4 sw=4 sts=4 expandtab "smartindent
 au BufRead,BufNewFile *.ino set filetype=c
 
 " assembler *.s *.asm
-"autocmd FileType s setlocal ft=asm6502 ts=4 sw=4 sts=4 expandtab "smartindent
-"au BufRead,BufNewFile *.s set ft=acme
-"au BufRead,BufNewFile *.s set filetype=python
 au BufRead,BufNewFile *.s set ft=asmM6502 ts=8 sw=8 sts=8 expandtab "smartindent
 au BufRead,BufNewFile *.asm set ft=asmM6502 ts=8 sw=8 sts=8 expandtab "smartindent
 au BufRead,BufNewFile *.inc set ft=asmM6502 ts=8 sw=8 sts=8 expandtab "smartindent
