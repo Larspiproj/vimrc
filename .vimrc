@@ -46,20 +46,12 @@ autocmd FileType python setlocal ts=4 sw=4 sts=4 expandtab "smartindent
 "au BufRead,BufNewFile *.ino set filetype=c
 au BufRead,BufNewFile *.ino set filetype=arduino ts=2 sw=2 sts=2 expandtab smartindent
 
-<<<<<<< HEAD
 " assembler *.s *.asm
 au BufRead,BufNewFile *.s set ft=asmM6502 ts=8 sw=8 sts=8 expandtab "smartindent
 au BufRead,BufNewFile *.asm set ft=asmM6502 ts=8 sw=8 sts=8 expandtab "smartindent
 au BufRead,BufNewFile *.inc set ft=asmM6502 ts=8 sw=8 sts=8 expandtab "smartindent
 au BufRead,BufNewFile *.h set filetype=c
 au BufRead,BufNewFile Makefile set filetype=make
-=======
-" s (assembler)
-"au BufRead,BufNewFile *.s set ft=asm_ca65.vim ts=4 sw=4 sts=4 expandtab smartindent
-au BufRead,BufNewFile *.s set ft=asmM6502 ts=4 sw=4 sts=4 expandtab smartindent
-"au BufRead,BufNewFile *.s set ft=acme
-"au BufRead,BufNewFile *.s set filetype=python
->>>>>>> 39306cd89894fd6276b2f2dce0930c5fa5c02960
 
 ab _sh #!/bin/bash
 ab _main #include <stdio.h><CR><CR><C-d>int main(int argc, char** argv) {<CR><CR><C-d>}
