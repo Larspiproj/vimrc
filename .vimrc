@@ -48,7 +48,8 @@ au BufRead,BufNewFile *.ino set filetype=arduino ts=2 sw=2 sts=2 expandtab smart
 
 " assembler *.s *.asm
 au BufRead,BufNewFile *.s set ft=asmM6502 ts=8 sw=8 sts=8 expandtab "smartindent
-au BufRead,BufNewFile *.asm set ft=asmM6502 ts=8 sw=8 sts=8 expandtab "smartindent
+"au BufRead,BufNewFile *.asm set ft=asmM6502 ts=8 sw=8 sts=8 expandtab "smartindent
+au BufRead,BufNewFile *.asm set ft=nasm ts=8 sw=8 sts=8 expandtab "smartindent
 au BufRead,BufNewFile *.inc set ft=asmM6502 ts=8 sw=8 sts=8 expandtab "smartindent
 au BufRead,BufNewFile *.h set filetype=c
 au BufRead,BufNewFile Makefile set filetype=make
